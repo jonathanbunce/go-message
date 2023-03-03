@@ -29,7 +29,7 @@ func IsUnknownCharset(err error) bool {
 // lower-case. utf-8 and us-ascii charsets are handled by default. One of the
 // the CharsetReader's result values must be non-nil.
 //
-// Importing github.com/emersion/go-message/charset will set CharsetReader to
+// Importing github.com/jonathanbunce/go-message/charset will set CharsetReader to
 // a function that handles most common charsets. Alternatively, CharsetReader
 // can be set to e.g. golang.org/x/net/html/charset.NewReaderLabel.
 var CharsetReader func(charset string, input io.Reader) (io.Reader, error)
@@ -55,7 +55,7 @@ func charsetReader(charset string, input io.Reader) (io.Reader, error) {
 // lower-case. utf-8 and us-ascii charsets are handled by default. One of the
 // the CharsetWriter's result values must be non-nil.
 //
-// Importing github.com/emersion/go-message/charset will set CharsetWriter to
+// Importing github.com/jonathanbunce/go-message/charset will set CharsetWriter to
 // a function that handles most common charsets.
 var CharsetWriter func(charset string, writer io.Writer) (io.Writer, error)
 
